@@ -180,9 +180,8 @@ body {
 
 /* Botones */
 .button-group {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
@@ -225,17 +224,6 @@ body {
 .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
-}
-
-.btn-secondary {
-  background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
-  color: white;
-  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
-}
-
-.btn-secondary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(255, 107, 107, 0.4);
 }
 
 /* Loader moderno */
@@ -423,10 +411,6 @@ body {
   
   .title {
     font-size: 2.2rem;
-  }
-  
-  .button-group {
-    grid-template-columns: 1fr;
   }
   
   .input-section {

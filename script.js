@@ -83,10 +83,10 @@ async function generateSummaries() {
         return;
     }
 
-    // Detectar petición de enviar mensaje a Discord
+    // ✅ Detectar petición específica: "enviar mensaje a discord"
     if (inputText.toLowerCase().includes("enviar mensaje a discord")) {
         alert("MENSAJE ENVIADO AL DISCORD");
-        return;
+        return; // No ejecuta llamadas a Gemini ni Cohere
     }
 
     loader.style.display = 'block';
@@ -131,13 +131,3 @@ async function generateSummaries() {
         mensajeSentimiento.style.color = "gray";
     }
 }
-
-// ✅ Evento del botón Discord
-document.addEventListener('DOMContentLoaded', () => {
-    const discordBtn = document.getElementById('btnDiscord');
-    if (discordBtn) {
-        discordBtn.addEventListener('click', () => {
-            alert("MENSAJE ENVIADO AL DISCORD");
-        });
-    }
-});

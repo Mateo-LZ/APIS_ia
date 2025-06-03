@@ -13,7 +13,7 @@
     <div class="floating-shape shape-2"></div>
     <div class="floating-shape shape-3"></div>
   </div>
-
+ 
   <div class="container">
     <header class="header">
       <div class="header-icon">
@@ -22,35 +22,31 @@
       <h1 class="title">IA'S</h1>
       <p class="subtitle">Powered by Gemini & Cohere AI 🚀</p>
     </header>
-
+ 
     <div class="input-section">
       <div class="input-container">
         <textarea 
-          id="inputText" 
+          id="inputText"
           placeholder="Ingresa el texto que deseas resumir..."
           class="input-text"
         ></textarea>
         <div class="input-decoration"></div>
       </div>
-      
+             
       <div class="button-group">
         <button onclick="generateSummaries()" class="btn btn-primary">
           <i class="fas fa-bolt"></i>
-          <span>Generar Resúmenes</span>
-        </button>
-        <button id="btnDiscord" class="btn btn-secondary">
-          <i class="fab fa-discord"></i>
-          <span>Enviar a Discord</span>
+          <span>Generar IA</span>
         </button>
       </div>
     </div>
-
+ 
     <div class="loader" id="loader">
       <div class="loader-ring"></div>
       <div class="loader-ring"></div>
       <div class="loader-ring"></div>
     </div>
-
+ 
     <div class="results-section">
       <div class="result-card gemini-card">
         <div class="card-header">
@@ -66,7 +62,7 @@
           </div>
         </div>
       </div>
-
+ 
       <div class="result-card cohere-card">
         <div class="card-header">
           <div class="card-icon cohere-icon">
@@ -81,7 +77,7 @@
           </div>
         </div>
       </div>
-
+ 
       <div class="result-card sentiment-card">
         <div class="card-header">
           <div class="card-icon sentiment-icon">
@@ -98,7 +94,7 @@
       </div>
     </div>
   </div>
-
+ 
   <script src="script.js"></script>
 </body>
 </html>
